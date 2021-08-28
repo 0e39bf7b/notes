@@ -15,16 +15,6 @@
 
 
 /*
- * Contents
- *
- * Global resets
- * Container
- * Reverse layout
- * Themes
- */
-
-
-/*
  * Global resets
  *
  * Update the foundational and global aspects of the page.
@@ -44,79 +34,35 @@ html {
   }
 }
 
-.site-title {
-  text-align: center;
-}
-
 /* Container
  *
  * Align the contents of the site above the proper threshold with some margin-fu.
  */
 
-.content {
+main {
   padding-top:    1rem;
   padding-bottom: 1rem;
 }
 
 @media (min-width: 48em) {
-  .content {
+  .container {
     max-width: 44rem;
   }
 }
 
-/*
- * Themes
- *
- * As of v1.1, Hyde includes optional themes to color the links
- * within blog posts. To use, add the class of your choosing to the `body`.
- */
-
-/* Base16 (http://chriskempson.github.io/base16/#default) */
-
-/* Red */
-.theme-base-08 .content a,
-.theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
+.post + .post {
+  margin-top: 40px;
 }
 
-/* Orange */
-.theme-base-09 .content a,
-.theme-base-09 .related-posts li a:hover {
-  color: #d28445;
+
+.post-title {
+  font-weight: 400;
 }
 
-/* Yellow */
-.theme-base-0a .content a,
-.theme-base-0a .related-posts li a:hover {
-  color: #f4bf75;
-}
-
-/* Green */
-.theme-base-0b .content a,
-.theme-base-0b .related-posts li a:hover {
-  color: #90a959;
-}
-
-/* Cyan */
-.theme-base-0c .content a,
-.theme-base-0c .related-posts li a:hover {
-  color: #75b5aa;
-}
-
-/* Blue */
-.theme-base-0d .content a,
-.theme-base-0d .related-posts li a:hover {
-  color: #6a9fb5;
-}
-
-/* Magenta */
-.theme-base-0e .content a,
-.theme-base-0e .related-posts li a:hover {
-  color: #aa759f;
-}
-
-/* Brown */
-.theme-base-0f .content a,
-.theme-base-0f .related-posts li a:hover {
-  color: #8f5536;
+.site-title {
+  max-width: 44rem;
+  margin: 32px auto 40px;
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
