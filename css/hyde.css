@@ -59,6 +59,10 @@ main {
   font-weight: 400;
 }
 
+.post-date a {
+  color: #9a9a9a;
+}
+
 .site-title {
   max-width: 44rem;
   margin: 32px auto 40px;
