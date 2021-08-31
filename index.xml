@@ -6,7 +6,18 @@
     <description>Recent content on Developer&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Aug 2021 20:09:40 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Aug 2021 07:43:10 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1630395790</title>
+      <link>https://notes.0e39bf7b.blog/posts/1630395790/</link>
+      <pubDate>Tue, 31 Aug 2021 07:43:10 +0000</pubDate>
+      
+      <guid>https://notes.0e39bf7b.blog/posts/1630395790/</guid>
+      <description>One of the most important parts of laptop security is disk encryption. It can help to save your personal data if your lost your computer or it&amp;rsquo;s being stolen. It&amp;rsquo;s impossible to encrypt everything. You need some code to ask for the password from the user and decrypt the system.
+There are several options when you work with Ubuntu:
+ encrypt only home directory; encrypt the operating system partition during the installation process and rely on UEFI Secure Boot for Linux kernel verification; encrypt not only the operating system partition, but also the boot partition; look at Full Disk Encryption Howto for more details.</description>
+    </item>
+    
     <item>
       <title>1630181380</title>
       <link>https://notes.0e39bf7b.blog/posts/1630181380/</link>
