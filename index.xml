@@ -13,7 +13,7 @@
       <pubDate>Tue, 31 Aug 2021 07:43:10 +0000</pubDate>
       
       <guid>https://notes.0e39bf7b.blog/posts/1630395790/</guid>
-      <description>One of the most important parts of laptop security is disk encryption. It can help to save your personal data if your lost your computer or it&amp;rsquo;s being stolen. It&amp;rsquo;s impossible to encrypt everything. You need some code to ask for the password from the user and decrypt the system.
+      <description>One of the most important parts of laptop security is disk encryption. It can help to save your personal data if you lost your computer or it was stolen. It&amp;rsquo;s impossible to encrypt everything. You need some code to ask for the password from the user and decrypt the system.
 There are several options when you work with Ubuntu:
  encrypt only home directory; encrypt the operating system partition during the installation process and rely on UEFI Secure Boot for Linux kernel verification; encrypt not only the operating system partition, but also the boot partition; look at Full Disk Encryption Howto for more details.</description>
     </item>
