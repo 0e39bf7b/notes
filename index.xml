@@ -6,7 +6,17 @@
     <description>Recent content on Developer&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Sep 2021 07:35:46 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Sep 2021 17:40:32 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1631122832</title>
+      <link>https://notes.0e39bf7b.blog/posts/1631122832/</link>
+      <pubDate>Wed, 08 Sep 2021 17:40:32 +0000</pubDate>
+      
+      <guid>https://notes.0e39bf7b.blog/posts/1631122832/</guid>
+      <description>There is a Full HD screen on my 14&amp;quot; laptop. It looks like some sort of HiDPI for me, and that is why controls of an interface on native resolution are too small, so it&amp;rsquo;s difficult to use. On Windows, an interface was scaled for 125% and looks a lot better.
+I tried to make the same settings on Ubuntu 21.04, and there were some issues. There are two options: a new Wayland session and a more traditional Xorg session.</description>
+    </item>
+    
     <item>
       <title>1630740946</title>
       <link>https://notes.0e39bf7b.blog/posts/1630740946/</link>

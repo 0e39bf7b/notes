@@ -30,6 +30,36 @@
     <main class="container">
     <div class="posts">
 <article class="post">
+  <p>There is a Full HD screen on my 14&quot; laptop. It looks like some sort of HiDPI for me, and that is why
+controls of an interface on native resolution are too small, so it&rsquo;s difficult to use. On Windows,
+an interface was scaled for 125% and looks a lot better.</p>
+<p>I tried to make the same settings on Ubuntu 21.04, and there were some issues. There are two
+options: a new Wayland session and a more traditional Xorg session.</p>
+<p>When I set up a 125% scale for the interface in the Wayland session, it looks great, but some apps
+like Google Chrome, VS Code, or Slack look blurry out of the box. For some apps, it&rsquo;s possible to
+fix it in some way using experimental features, that can lead to instability and random crashes.
+Also, there is
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1718727">an extremely annoying bug in Firefox</a>: some
+popups like Multi-Account Containers are cropped and it&rsquo;s impossible to use them. It will be fixed
+only in Firefox 93 which will be released in October. There are a lot of small issues on Wayland
+like <a href="https://github.com/vim/vim/issues/5157">Vim clipboard</a>, that is why I&rsquo;m not sure that Wayland
+is ready for desktop now.</p>
+<p>When I set up a 125% scale for the interface in the Xorg session all apps work properly, but there
+are some artifacts in the interface like black rectangles around windows or black lines in random
+places of the screen. It&rsquo;s better than Wayland but still not good enough.</p>
+<p>I&rsquo;d tried different Linux distributions and different desktop environments to find the best solution
+for cases like mine. Xfce and Cinnamon work fine only with x2 and x3 scales. Elementary works with
+x2 scale and allows to increase fonts, so texts look fine, but controls are too small. The
+co-founder of Elementary
+<a href="https://blog.elementary.io/what-is-hidpi/">says it&rsquo;s OK and I just need to buy another laptop</a>.</p>
+<p>The solution I found is Kubuntu 21.04 with KDE 5.21.4. It allows setting 125% scale out of the box.
+Everything works: Qt apps, GTK apps, Firefox, Google Chrome, and so on. That is why now I&rsquo;m a happy
+KDE user.</p>
+
+  <div class="post-date">
+    <a href="https://notes.0e39bf7b.blog/posts/1631122832/"><time datetime="2021-09-08T17:40:32Z">Sep 8, 2021 17:40</time></a>
+  </div>
+</article><article class="post">
   <p>I&rsquo;ve used to ask questions about different open source projects on Freenode IRC several years ago.
 Today I&rsquo;ve found that Freenode staff members had left the company and started
 <a href="https://libera.chat/">Libera.Chat</a>. You can find the roots of this decision on
