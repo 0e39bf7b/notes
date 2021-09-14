@@ -30,6 +30,23 @@
     <main class="container">
     <div class="posts">
 <article class="post">
+  <p>I use Thunderbird as an e-mail client. I&rsquo;d configured several rules on the server side for splitting
+messages from INBOX into several folders (Jira, GitLab, etc.). It&rsquo;s important to execute these rules
+on the server side because I have several clients and, I don&rsquo;t want to make the same rules for each
+client. By default, Thunderbird checks only the INBOX folder of the IMAP account, so I had no
+notifications about new mail in the other folders. Recently I&rsquo;d found that it can be fixed.</p>
+<p>To make Thunderbird check for new messages in all folders:</p>
+<ul>
+<li>open Thunderbird preferences;</li>
+<li>open Config Editor;</li>
+<li>search for: <code>mail.server.default.check_all_folders_for_new</code>;</li>
+<li>change value from <code>False</code> to <code>True</code>.</li>
+</ul>
+
+  <div class="post-date">
+    <a href="https://notes.0e39bf7b.blog/posts/1631610988/"><time datetime="2021-09-14T09:16:28Z">Sep 14, 2021 09:16</time></a>
+  </div>
+</article><article class="post">
   <p>There is a Full HD screen on my 14&quot; laptop. It looks like some sort of HiDPI for me, and that is why
 controls of an interface on native resolution are too small, so it&rsquo;s difficult to use. On Windows,
 an interface was scaled for 125% and looks a lot better.</p>

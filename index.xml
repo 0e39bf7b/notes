@@ -6,7 +6,16 @@
     <description>Recent content on Developer&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Sep 2021 17:40:32 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Sep 2021 09:16:28 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1631610988</title>
+      <link>https://notes.0e39bf7b.blog/posts/1631610988/</link>
+      <pubDate>Tue, 14 Sep 2021 09:16:28 +0000</pubDate>
+      
+      <guid>https://notes.0e39bf7b.blog/posts/1631610988/</guid>
+      <description>I use Thunderbird as an e-mail client. I&amp;rsquo;d configured several rules on the server side for splitting messages from INBOX into several folders (Jira, GitLab, etc.). It&amp;rsquo;s important to execute these rules on the server side because I have several clients and, I don&amp;rsquo;t want to make the same rules for each client. By default, Thunderbird checks only the INBOX folder of the IMAP account, so I had no notifications about new mail in the other folders.</description>
+    </item>
+    
     <item>
       <title>1631122832</title>
       <link>https://notes.0e39bf7b.blog/posts/1631122832/</link>
