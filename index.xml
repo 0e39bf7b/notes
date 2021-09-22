@@ -13,7 +13,7 @@
       <pubDate>Wed, 22 Sep 2021 07:37:33 +0000</pubDate>
       
       <guid>https://notes.0e39bf7b.blog/posts/1632296253/</guid>
-      <description>Recently I&amp;rsquo;d found that ping utility on Ubuntu 20.04 and Ubuntu 21.04 works without root permissions, suid flag, or CAP_NET_RAW capability. In the [Kernel documentation](The sysctl documentation writes) it is said that ping uses ICMP_PROTO datagram sockets and it&amp;rsquo;s possible to allow users without root permissions to create such sockets:
+      <description>Recently I&amp;rsquo;d found that ping utility on Ubuntu 20.04 and Ubuntu 21.04 works without root permissions, suid flag, or CAP_NET_RAW capability. In the Kernel documentation it is said that ping uses ICMP_PROTO datagram sockets and it&amp;rsquo;s possible to allow users without root permissions to create such sockets:
  ping_group_range - 2 INTEGERS
   Restrict ICMP_PROTO datagram sockets to users in the group range. The default is &amp;ldquo;1 0&amp;rdquo;, meaning, that nobody (not even root) may create ping sockets.</description>
     </item>

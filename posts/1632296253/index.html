@@ -31,8 +31,9 @@
     <div class="post">
   <p>Recently I&rsquo;d found that <code>ping</code> utility on Ubuntu 20.04 and Ubuntu 21.04 works without root
 permissions, suid flag, or <code>CAP_NET_RAW</code> capability. In the
-[Kernel documentation](The sysctl documentation writes) it is said that <code>ping</code> uses <code>ICMP_PROTO</code>
-datagram sockets and it&rsquo;s possible to allow users without root permissions to create such sockets:</p>
+<a href="https://www.kernel.org/doc/Documentation/networking/ip-sysctl.txt">Kernel documentation</a> it is said
+that <code>ping</code> uses <code>ICMP_PROTO</code> datagram sockets and it&rsquo;s possible to allow users without root
+permissions to create such sockets:</p>
 <blockquote>
 <p><strong>ping_group_range</strong> - 2 INTEGERS</p>
 </blockquote>
