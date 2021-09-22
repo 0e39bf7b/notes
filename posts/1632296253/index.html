@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.87.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Developer&#39;s notes</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://notes.0e39bf7b.blog/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://notes.0e39bf7b.blog/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://notes.0e39bf7b.blog/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://notes.0e39bf7b.blog/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+</head>
+
+  <body>
+    <header class="site-title">
+      <h1><a href="https://notes.0e39bf7b.blog/">Developer&#39;s notes</a></h1>
+    </header>
+    <main class="container">
+    <div class="post">
+  <p>Recently I&rsquo;d found that <code>ping</code> utility on Ubuntu 20.04 and Ubuntu 21.04 works without root
+permissions, suid flag, or <code>CAP_NET_RAW</code> capability. In the
+[Kernel documentation](The sysctl documentation writes) it is said that <code>ping</code> uses <code>ICMP_PROTO</code>
+datagram sockets and it&rsquo;s possible to allow users without root permissions to create such sockets:</p>
+<blockquote>
+<p><strong>ping_group_range</strong> - 2 INTEGERS</p>
+</blockquote>
+<blockquote>
+<p>Restrict <code>ICMP_PROTO</code> datagram sockets to users in the group range. The default is &ldquo;<code>1 0</code>&rdquo;,
+meaning, that nobody (not even root) may create ping sockets. Setting it to &ldquo;<code>100 100</code>&rdquo; would
+grant permissions to the single group. &ldquo;<code>0 4294967295</code>&rdquo; would enable it for the world,
+&ldquo;<code>100 4294967295</code>&rdquo; would enable it for the users, but not daemons.</p>
+</blockquote>
+<p>I&rsquo;d checked <code>/proc/sys/net/ipv4/ping_group_range</code> and found <code>0 2147483647</code> interval.</p>
+<p>Also, there is a
+<a href="https://sturmflut.github.io/linux/ubuntu/2015/01/17/unprivileged-icmp-sockets-on-linux/">code example</a>
+that demonstrates the use of <code>ICMP_PROTO</code> sockets.</p>
+
+  <time datetime=2021-09-22T07:37:33Z class="post-date">Sep 22, 2021 07:37</time>
+</div>
+    </main>
+  </body>
+</html>
