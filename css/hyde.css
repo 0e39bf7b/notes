@@ -51,9 +51,9 @@ main {
 }
 
 .post + .post {
+  padding-top: 80px;
   margin-top: 80px;
 }
-
 
 .post-title {
   font-weight: 400;
@@ -69,4 +69,20 @@ main {
   text-align: left;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.post + .post::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 1px;
+  background: #ececec;
+  width: 60%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.post {
+  position: relative;
 }
