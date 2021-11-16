@@ -6,7 +6,18 @@
     <description>Recent content on Developer&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Oct 2021 21:37:28 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Nov 2021 11:33:36 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1637062416</title>
+      <link>https://notes.0e39bf7b.blog/posts/1637062416/</link>
+      <pubDate>Tue, 16 Nov 2021 11:33:36 +0000</pubDate>
+      
+      <guid>https://notes.0e39bf7b.blog/posts/1637062416/</guid>
+      <description>I have a dual boot setup on my PC: Ubuntu and Windows 10. Sometimes it&amp;rsquo;s required to reload Windows for processing system updates. By default, Grub loads the first system from the list, which is Ubuntu. It&amp;rsquo;s inconvenient. I think it&amp;rsquo;s better to make Grub remember the last loaded OS and start it after reboot.
+To achieve this behaviour you need to perform such steps:
+  Add to /etc/default/grub following strings:</description>
+    </item>
+    
     <item>
       <title>1634247448</title>
       <link>https://notes.0e39bf7b.blog/posts/1634247448/</link>

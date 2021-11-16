@@ -30,6 +30,27 @@
     <main class="container">
     <div class="posts">
 <article class="post">
+  <p>I have a dual boot setup on my PC: Ubuntu and Windows 10. Sometimes it&rsquo;s required to reload Windows
+for processing system updates. By default, Grub loads the first system from the list, which is
+Ubuntu. It&rsquo;s inconvenient. I think it&rsquo;s better to make Grub remember the last loaded OS and start it
+after reboot.</p>
+<p>To achieve this behaviour you need to perform such steps:</p>
+<ol>
+<li>
+<p>Add to <code>/etc/default/grub</code> following strings:</p>
+<pre><code> GRUB_DEFAULT=saved
+ GRUB_SAVEDEFAULT=true
+</code></pre>
+</li>
+<li>
+<p>Execute <code>sudo update-grub</code>.</p>
+</li>
+</ol>
+
+  <div class="post-date">
+    <a href="https://notes.0e39bf7b.blog/posts/1637062416/"><time datetime="2021-11-16T11:33:36Z">Nov 16, 2021 11:33</time></a>
+  </div>
+</article><article class="post">
   <p>Found <a href="https://timeline.kde.org/">KDE Timeline</a>. Looks interesting. The times of KDE 3 were really
 awesome.</p>
 
