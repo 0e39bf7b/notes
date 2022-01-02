@@ -6,7 +6,17 @@
     <description>Recent content on Developer&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Dec 2021 18:12:31 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Jan 2022 20:24:52 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1641155092</title>
+      <link>https://notes.0e39bf7b.blog/posts/1641155092/</link>
+      <pubDate>Sun, 02 Jan 2022 20:24:52 +0000</pubDate>
+      
+      <guid>https://notes.0e39bf7b.blog/posts/1641155092/</guid>
+      <description>I have a network smb share with different videos that I want to watch over network on my devices. Today I&amp;rsquo;d tried to watch a video on my Kubuntu laptop with VLC. It prints errors like:
+Your input can&#39;t be opened: VLC is unable to open the MRL &#39;smb://10.0.0.1/Share/video.mkv&#39;. Check the log for details. I&amp;rsquo;d checked logs and found nothing. I&amp;rsquo;d tried to set username and password in the settings as suggested on the Internet with no results.</description>
+    </item>
+    
     <item>
       <title>1640974351</title>
       <link>https://notes.0e39bf7b.blog/posts/1640974351/</link>

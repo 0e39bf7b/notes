@@ -30,6 +30,28 @@
     <main class="container">
     <div class="posts">
 <article class="post">
+  <p>I have a network smb share with different videos that I want to watch over network on my devices.
+Today I&rsquo;d tried to watch a video on my Kubuntu laptop with VLC. It prints errors like:</p>
+<pre><code>Your input can't be opened:
+VLC is unable to open the MRL 'smb://10.0.0.1/Share/video.mkv'. Check the log for details.
+</code></pre><p>I&rsquo;d checked logs and found nothing. I&rsquo;d tried to set username and password in the settings as
+<a href="https://www.dedoimedo.com/computers/vlc-remote-files.html">suggested on the Internet</a> with no
+results. I&rsquo;d also tried to install <code>kio-fuse</code> as
+<a href="https://www.reddit.com/r/kde/comments/er2udt/opening_video_files_from_dolphin_with_vlc_in/">described on Reddit</a>
+— nothing changed. So I think, there is some bug in the VLC, that is why I used a different
+solution:</p>
+<ol>
+<li>Open <code>/usr/share/applications/vlc.desktop</code>.</li>
+<li>Remove line <code>X-KDE-Protocols=ftp,http,https,mms,rtmp,rtsp,sftp,smb</code>.</li>
+<li>Make sure that <code>kio-fuse</code> installed.</li>
+</ol>
+<p><code>X-KDE-Protocols</code> instructs Dolphin to pass smb URLs directly to VLC. Without this line, <code>kio</code> mounts
+smb share and allows VLC to work with a local file.</p>
+
+  <div class="post-date">
+    <a href="https://notes.0e39bf7b.blog/posts/1641155092/"><time datetime="2022-01-02T20:24:52Z">Jan 2, 2022 20:24</time></a>
+  </div>
+</article><article class="post">
   <p>Today I&rsquo;ve found <a href="https://albertlauncher.github.io/">Albert</a>. It&rsquo;s a great Alfred-like app for
 Linux.</p>
 
