@@ -13,7 +13,7 @@
       <pubDate>Mon, 24 Jan 2022 21:49:50 +0000</pubDate>
       
       <guid>https://notes.0e39bf7b.blog/posts/1643060990/</guid>
-      <description>Today I&amp;rsquo;ve found that youtube-dl downloads video too slow. Switching to yt-dlp helped: 10MiB/s instead of 200KiB/s.</description>
+      <description>Today I&amp;rsquo;ve found that youtube-dl downloads video too slow. Switching to yt-dlp helped: 10MiB/s instead of 50KiB/s.</description>
     </item>
     
     <item>
