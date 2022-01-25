@@ -6,7 +6,16 @@
     <description>Recent content on Developer&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Jan 2022 21:49:50 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Jan 2022 20:42:50 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1643143370</title>
+      <link>https://notes.0e39bf7b.blog/posts/1643143370/</link>
+      <pubDate>Tue, 25 Jan 2022 20:42:50 +0000</pubDate>
+      
+      <guid>https://notes.0e39bf7b.blog/posts/1643143370/</guid>
+      <description>To make L2TP/IPsec VPN client work under Kubuntu install network-manager-l2tp package.</description>
+    </item>
+    
     <item>
       <title>1643060990</title>
       <link>https://notes.0e39bf7b.blog/posts/1643060990/</link>
