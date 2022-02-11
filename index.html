@@ -31,6 +31,19 @@
     <main class="container">
     <div class="posts">
 <article class="post">
+  <p>The majority of GUI apps on Linux are written using some toolkit like <a href="https://www.gtk.org/">GTK</a> or
+<a href="https://www.qt.io/">Qt</a>. Such libs provide high-level abstractions like buttons or labels but the
+real rendering is executed on the backend like <a href="https://x.org/wiki/">X11</a> or
+<a href="https://wayland.freedesktop.org/">Wayland</a>. I&rsquo;d never thought about it. Today I&rsquo;ve found that the
+X11 backend uses <a href="https://www.x.org/releases/current/doc/libX11/libX11/libX11.html">Xlib</a>. To
+understand what level of abstraction GUI libraries provide, you can take a look at
+<a href="https://tronche.com/gui/x/xlib-tutorial/">this small tutorial</a>. After writing a Hello World with
+Xlib it becomes clear for me why developers introduce more abstraction layers.</p>
+
+  <div class="post-date">
+    <a href="https://notes.0e39bf7b.blog/posts/1644617329/"><time datetime="2022-02-11T22:08:49Z">Feb 11, 2022 22:08</time></a>
+  </div>
+</article><article class="post">
   <p>I&rsquo;m learning the STM32 platform. The code generation in
 <a href="https://www.st.com/en/development-tools/stm32cubeide.html">STM32CubeIDE</a> makes it easier to
 configure different MCU subsystems and start writing &ldquo;hello world&rdquo; apps. However, it can be

@@ -6,7 +6,16 @@
     <description>Recent content on Developer&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Feb 2022 16:26:39 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Feb 2022 22:08:49 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1644617329</title>
+      <link>https://notes.0e39bf7b.blog/posts/1644617329/</link>
+      <pubDate>Fri, 11 Feb 2022 22:08:49 +0000</pubDate>
+      
+      <guid>https://notes.0e39bf7b.blog/posts/1644617329/</guid>
+      <description>The majority of GUI apps on Linux are written using some toolkit like GTK or Qt. Such libs provide high-level abstractions like buttons or labels but the real rendering is executed on the backend like X11 or Wayland. I&amp;rsquo;d never thought about it. Today I&amp;rsquo;ve found that the X11 backend uses Xlib. To understand what level of abstraction GUI libraries provide, you can take a look at this small tutorial. After writing a Hello World with Xlib it becomes clear for me why developers introduce more abstraction layers.</description>
+    </item>
+    
     <item>
       <title>1644078399</title>
       <link>https://notes.0e39bf7b.blog/posts/1644078399/</link>
