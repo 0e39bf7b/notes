@@ -31,6 +31,24 @@
     <main class="container">
     <div class="posts">
 <article class="post">
+  <p>Falling down the rabbit hole of HiDPI screens and fractional scaling on Linux desktops I came across
+<a href="https://www.reddit.com/r/kde/comments/lficfe/wayland_fractional_scaling_may_be_sort_of_a/">an interesting discussion on Reddit</a>.
+It contains a lot of useful links that help to form an opinion on the subject.</p>
+<p>I found that in the KDE X11 session fractional scaling is implemented on Qt Framework level, so each
+app scales its output itself. Gnome uses a different technique. It implies rendering everything at
+an integer factor and then downscaling using a raster operation. It&rsquo;s a more universal approach and
+does not depend on the GUI framework, but it can lead to some sort of degradation for the font
+rendering. It can be almost invisible for Apple-like retina displays with a 1.75 scale factor but
+it&rsquo;s notable on the average 13&quot; - 14&quot; laptop 1080p screen.</p>
+<p>I think the best way to avoid HiDPI rendering issues is using such displays that allow setting
+integer scale factors like x2 on a 14&quot; screen with 2880х1800 resolution. All other techniques will
+be always the compromise between GUI framework requirements, multi-screen setup support,
+performance, and final picture quality.</p>
+
+  <div class="post-date">
+    <a href="https://notes.0e39bf7b.blog/posts/1644658585/"><time datetime="2022-02-12T09:36:25Z">Feb 12, 2022 09:36</time></a>
+  </div>
+</article><article class="post">
   <p>The majority of GUI apps on Linux are written using some toolkit like <a href="https://www.gtk.org/">GTK</a> or
 <a href="https://www.qt.io/">Qt</a>. Such libs provide high-level abstractions like buttons or labels but the
 real rendering is executed on the backend like <a href="https://x.org/wiki/">X11</a> or

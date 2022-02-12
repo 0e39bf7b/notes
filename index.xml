@@ -6,7 +6,17 @@
     <description>Recent content on Developer&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Feb 2022 22:08:49 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Feb 2022 09:36:25 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1644658585</title>
+      <link>https://notes.0e39bf7b.blog/posts/1644658585/</link>
+      <pubDate>Sat, 12 Feb 2022 09:36:25 +0000</pubDate>
+      
+      <guid>https://notes.0e39bf7b.blog/posts/1644658585/</guid>
+      <description>Falling down the rabbit hole of HiDPI screens and fractional scaling on Linux desktops I came across an interesting discussion on Reddit. It contains a lot of useful links that help to form an opinion on the subject.
+I found that in the KDE X11 session fractional scaling is implemented on Qt Framework level, so each app scales its output itself. Gnome uses a different technique. It implies rendering everything at an integer factor and then downscaling using a raster operation.</description>
+    </item>
+    
     <item>
       <title>1644617329</title>
       <link>https://notes.0e39bf7b.blog/posts/1644617329/</link>
