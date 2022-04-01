@@ -13,7 +13,7 @@
       <pubDate>Fri, 01 Apr 2022 07:08:28 +0000</pubDate>
       
       <guid>https://notes.0e39bf7b.blog/posts/1648796908/</guid>
-      <description>Surprisingly found that Linux has multiple routing tables and set of rules that tell the kernel how to choose the particular table for each packet. There is an article explaining this subject.</description>
+      <description>Surprisingly found that Linux has multiple routing tables and set of rules that tell the kernel how to choose the particular table for each packet. There are an article and a reddit discussion explaining this subject.</description>
     </item>
     
     <item>
