@@ -6,7 +6,17 @@
     <description>Recent content on Developer&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Apr 2022 07:08:28 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Apr 2022 14:36:36 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1648910196</title>
+      <link>https://notes.0e39bf7b.blog/posts/1648910196/</link>
+      <pubDate>Sat, 02 Apr 2022 14:36:36 +0000</pubDate>
+      
+      <guid>https://notes.0e39bf7b.blog/posts/1648910196/</guid>
+      <description>Looked at Gitea as a self-hosted alternative for GitHub. It looks nice: a lot of useful features like global code search and template repositories. There is a comprehensive comparison of Gitea to other Git hosting solutions. It can help decide if Gitea is suited for your needs or not.
+The only thing that surprised me a bit: the information about package registry is already in the official docs, but PR with this feature was merged only several days ago, so it will be available only in v1.</description>
+    </item>
+    
     <item>
       <title>1648796908</title>
       <link>https://notes.0e39bf7b.blog/posts/1648796908/</link>
