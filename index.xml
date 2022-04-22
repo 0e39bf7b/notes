@@ -6,7 +6,16 @@
     <description>Recent content on Developer&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Apr 2022 12:46:53 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Apr 2022 07:50:42 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1650613842</title>
+      <link>https://notes.0e39bf7b.blog/posts/1650613842/</link>
+      <pubDate>Fri, 22 Apr 2022 07:50:42 +0000</pubDate>
+      
+      <guid>https://notes.0e39bf7b.blog/posts/1650613842/</guid>
+      <description>It&amp;rsquo;s convenient to monitor network activity in the terminal. There are several tools for this task: bmon, slurm or tcptrack. I prefer to use slurm.</description>
+    </item>
+    
     <item>
       <title>1650372413</title>
       <link>https://notes.0e39bf7b.blog/posts/1650372413/</link>
