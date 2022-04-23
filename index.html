@@ -31,6 +31,21 @@
     <main class="container">
     <div class="posts">
 <article class="post">
+  <p>Kubuntu 22.04 has libssl 3.0.2, that is not compatible with libssl from old releases, so Viber
+messenger is not working. It shows an error message &ldquo;No Connection&rdquo; even the other network apps like
+Firefox work well. I think this bug will be fixed in future Viber versions. For now, it&rsquo;s possible
+to perform a hotfix:</p>
+<p>Install libssl 1.2.1 from Ubuntu 21.10:</p>
+<pre><code>wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1l-1ubuntu1.2_amd64.deb
+sudo dpkg -i libssl1.1_1.1.1l-1ubuntu1.2_amd64.deb
+</code></pre><p>Preload libssl 1.2.1 into Viber. Replace line that contains <code>Exec</code> instruction in
+<code>/usr/share/applications/viber.desktop</code> with this:</p>
+<pre><code>Exec=LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libssl.so /opt/viber/Viber %u
+</code></pre>
+  <div class="post-date">
+    <a href="https://notes.0e39bf7b.blog/posts/1650723317/"><time datetime="2022-04-23T14:15:17Z">Apr 23, 2022 14:15</time></a>
+  </div>
+</article><article class="post">
   <p>I&rsquo;ve just updated from Kubuntu 21.04 to Kubuntu 22.04 on my laptop. From the
 <a href="https://wiki.ubuntu.com/JammyJellyfish/ReleaseNotes/Kubuntu">release notes</a> I found no breaking
 changes, but only minor updates for different programs. Everything works as expected.</p>
