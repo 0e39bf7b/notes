@@ -6,7 +6,16 @@
     <description>Recent content on Developer&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Apr 2022 14:15:17 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 May 2022 19:48:14 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1651607294</title>
+      <link>https://notes.0e39bf7b.blog/posts/1651607294/</link>
+      <pubDate>Tue, 03 May 2022 19:48:14 +0000</pubDate>
+      
+      <guid>https://notes.0e39bf7b.blog/posts/1651607294/</guid>
+      <description>Systemd allows to pass a single argument to a service. This feature is called Service Templates. It can be used for such applications as OpenVPN (the argument is a connection config name) or PostgreSQL (the argument is a cluster version).</description>
+    </item>
+    
     <item>
       <title>1650723317</title>
       <link>https://notes.0e39bf7b.blog/posts/1650723317/</link>
