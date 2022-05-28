@@ -6,7 +6,16 @@
     <description>Recent content on Developer&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 May 2022 06:54:58 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 May 2022 12:58:48 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1653742728</title>
+      <link>https://notes.0e39bf7b.blog/posts/1653742728/</link>
+      <pubDate>Sat, 28 May 2022 12:58:48 +0000</pubDate>
+      
+      <guid>https://notes.0e39bf7b.blog/posts/1653742728/</guid>
+      <description>Ubuntu 22.04 distributes Firefox as a snap package. It starts slower than Firefox installed as a deb-package and it&amp;rsquo;s difficult to control updates of the browser. It&amp;rsquo;s possible to install Firefox as a deb package from Mozilla Team PPA. There is a useful guide from omgubuntu.co.uk about how to configure the system to use this PPA.</description>
+    </item>
+    
     <item>
       <title>1652165698</title>
       <link>https://notes.0e39bf7b.blog/posts/1652165698/</link>
