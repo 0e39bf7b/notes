@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.87.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Developer&#39;s notes</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://notes.0e39bf7b.blog/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://notes.0e39bf7b.blog/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://notes.0e39bf7b.blog/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://notes.0e39bf7b.blog/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+</head>
+
+  <body>
+    <header class="site-title">
+      <h1><a href="https://notes.0e39bf7b.blog/">Developer&#39;s notes</a></h1>
+      <h4><a href="https://0e39bf7b.blog">Go to Blog</a></h4>
+    </header>
+    <main class="container">
+    <div class="post">
+  <p>It&rsquo;s possible to connect to a remote host over SSH using a public key. It&rsquo;s a well-known feature
+which I use every day. SSH protocol is also used for the <code>git clone</code> command. I was curious about
+how Gitea implements the support of the SSH protocol. The first idea was about the custom SSH
+server.  I&rsquo;d inspected my local Gitea installation and found that there was no custom SSH server
+running, just the default <code>sshd</code>. Surprisingly, when I performed the command <code>ssh git@gitea</code> I got
+the message:</p>
+<blockquote>
+<p>Hi there, &lt;username&gt;! You&rsquo;ve successfully authenticated with the key named &lt;key name&gt;, but Gitea
+does not provide shell access. If this is unexpected, please log in with password and setup Gitea
+under another user.</p>
+</blockquote>
+<p>I&rsquo;d looked at the source code of the Gitea and found
+<a href="https://github.com/go-gitea/gitea/blob/1d04e8641d4abab6ce978bc2dc5523c2ddb2f628/cmd/serv.go#L140">serv.go</a>.
+This module allows to perform <code>git clone</code> over SSH, but who calls it? I looked at the
+<code>.ssh/authorized_keys</code> file in the Gitea home directory and get such a line:</p>
+<pre><code>command=&quot;/usr/local/bin/gitea --config=/etc/gitea/app.ini serv key-1&quot;,... ssh-rsa ...
+</code></pre><p><code>man authorized_keys</code> explains that <code>command</code> option specifies the command is executed instead of
+the default shell. So when I write <code>git clone</code> git starts SSH connection and OpenSSH server checks
+my key and if it&rsquo;s OK starts Gitea <code>serv</code> module.</p>
+<p>This OpenSSH feature allows to restrict certain public keys to perform just a specific operation.
+E.g. I can create a key and specify the command that calculates some server statistics. So if this
+key is compromised, the intruder can get only server statistics but can&rsquo;t execute arbitrary code.</p>
+<p>There are a lot more options for the <code>authorized_keys</code> file. I think the man page is worth reading.
+I got a lot of new info about the utility I use for a long time.</p>
+
+  <time datetime=2022-06-04T18:27:03Z class="post-date">Jun 4, 2022 18:27</time>
+</div>
+    </main>
+  </body>
+</html>

@@ -31,6 +31,35 @@
     <main class="container">
     <div class="posts">
 <article class="post">
+  <p>It&rsquo;s possible to connect to a remote host over SSH using a public key. It&rsquo;s a well-known feature
+which I use every day. SSH protocol is also used for the <code>git clone</code> command. I was curious about
+how Gitea implements the support of the SSH protocol. The first idea was about the custom SSH
+server.  I&rsquo;d inspected my local Gitea installation and found that there was no custom SSH server
+running, just the default <code>sshd</code>. Surprisingly, when I performed the command <code>ssh git@gitea</code> I got
+the message:</p>
+<blockquote>
+<p>Hi there, &lt;username&gt;! You&rsquo;ve successfully authenticated with the key named &lt;key name&gt;, but Gitea
+does not provide shell access. If this is unexpected, please log in with password and setup Gitea
+under another user.</p>
+</blockquote>
+<p>I&rsquo;d looked at the source code of the Gitea and found
+<a href="https://github.com/go-gitea/gitea/blob/1d04e8641d4abab6ce978bc2dc5523c2ddb2f628/cmd/serv.go#L140">serv.go</a>.
+This module allows to perform <code>git clone</code> over SSH, but who calls it? I looked at the
+<code>.ssh/authorized_keys</code> file in the Gitea home directory and get such a line:</p>
+<pre><code>command=&quot;/usr/local/bin/gitea --config=/etc/gitea/app.ini serv key-1&quot;,... ssh-rsa ...
+</code></pre><p><code>man authorized_keys</code> explains that <code>command</code> option specifies the command is executed instead of
+the default shell. So when I write <code>git clone</code> git starts SSH connection and OpenSSH server checks
+my key and if it&rsquo;s OK starts Gitea <code>serv</code> module.</p>
+<p>This OpenSSH feature allows to restrict certain public keys to perform just a specific operation.
+E.g. I can create a key and specify the command that calculates some server statistics. So if this
+key is compromised, the intruder can get only server statistics but can&rsquo;t execute arbitrary code.</p>
+<p>There are a lot more options for the <code>authorized_keys</code> file. I think the man page is worth reading.
+I got a lot of new info about the utility I use for a long time.</p>
+
+  <div class="post-date">
+    <a href="https://notes.0e39bf7b.blog/posts/1654367223/"><time datetime="2022-06-04T18:27:03Z">Jun 4, 2022 18:27</time></a>
+  </div>
+</article><article class="post">
   <p>Ubuntu 22.04 distributes Firefox as a snap package. It starts slower than Firefox installed as a
 deb-package and it&rsquo;s difficult to control updates of the browser. It&rsquo;s possible to install Firefox
 as a deb package from <a href="https://launchpad.net/~mozillateam/+archive/ubuntu/ppa">Mozilla Team PPA</a>.
