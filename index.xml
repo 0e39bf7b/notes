@@ -6,7 +6,16 @@
     <description>Recent content on Developer&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jun 2022 18:27:03 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Jul 2022 06:30:08 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1656743408</title>
+      <link>https://notes.0e39bf7b.blog/posts/1656743408/</link>
+      <pubDate>Sat, 02 Jul 2022 06:30:08 +0000</pubDate>
+      
+      <guid>https://notes.0e39bf7b.blog/posts/1656743408/</guid>
+      <description>One task that I perform these days is the configuration of the FreeIPA domain. Sometimes it&amp;rsquo;s not trivial, so I need to debug some sort of quirky errors from time to time. Today I&amp;rsquo;d found Thomas C. Foulds&amp;rsquo;s blog that contains a lot of useful information about FreeIPA debugging. It&amp;rsquo;s definitely worth reading.</description>
+    </item>
+    
     <item>
       <title>1654367223</title>
       <link>https://notes.0e39bf7b.blog/posts/1654367223/</link>
