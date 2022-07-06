@@ -6,7 +6,16 @@
     <description>Recent content on Developer&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Jul 2022 11:07:36 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jul 2022 12:17:16 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1657109836</title>
+      <link>https://notes.0e39bf7b.blog/posts/1657109836/</link>
+      <pubDate>Wed, 06 Jul 2022 12:17:16 +0000</pubDate>
+      
+      <guid>https://notes.0e39bf7b.blog/posts/1657109836/</guid>
+      <description>This article about sudo rules troubleshooting helped me a lot with FreeIPA configuration. It was difficult to understand what was going on before I turn debug logs of the SSSD on.</description>
+    </item>
+    
     <item>
       <title>1656760056</title>
       <link>https://notes.0e39bf7b.blog/posts/1656760056/</link>
