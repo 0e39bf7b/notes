@@ -31,6 +31,19 @@
     <main class="container">
     <div class="posts">
 <article class="post">
+  <p>Sometimes I need to test new software or prepare isolated stands. I use
+<a href="https://www.virtualbox.org/">VirtualBox</a> for these tasks. I want to access VMs from the host PC and
+the easiest way to achieve this is by using bridged network adapters. Unfortunately, VM with a
+bridged network is exposed not only to the host but also to all machines in the network. VM relies
+on the router DHCP. It&rsquo;s can be unacceptable for some locations.</p>
+<p>Today I&rsquo;ve found
+<a href="https://www.xmodulo.com/access-nat-guest-from-host-virtualbox.html">how to access a NAT guest from host</a>,
+so I can forward VM&rsquo;s port to the host and do not expose the VM for the entire network.</p>
+
+  <div class="post-date">
+    <a href="https://notes.0e39bf7b.blog/posts/1657717546/"><time datetime="2022-07-13T13:05:46Z">Jul 13, 2022 13:05</time></a>
+  </div>
+</article><article class="post">
   <p>Found <a href="https://www.youtube.com/watch?v=uqY3FMuMuRo">an outstanding video about VGA signal</a>. Ben
 Eater explains what VGA display actually does when it receives an input, how it processes this input
 to display pixels on the screen and how to make a circuit using primitive ICs that can generate such
