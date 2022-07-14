@@ -6,7 +6,16 @@
     <description>Recent content on Developer&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Jul 2022 13:05:46 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Jul 2022 11:50:40 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1657799440</title>
+      <link>https://notes.0e39bf7b.blog/posts/1657799440/</link>
+      <pubDate>Thu, 14 Jul 2022 11:50:40 +0000</pubDate>
+      
+      <guid>https://notes.0e39bf7b.blog/posts/1657799440/</guid>
+      <description>The easiest way to find Ubuntu installation date is checking the installer&amp;rsquo;s directory: ls -lt /var/log/installer.</description>
+    </item>
+    
     <item>
       <title>1657717546</title>
       <link>https://notes.0e39bf7b.blog/posts/1657717546/</link>
