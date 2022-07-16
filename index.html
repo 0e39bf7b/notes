@@ -31,6 +31,16 @@
     <main class="container">
     <div class="posts">
 <article class="post">
+  <p>I tried to download a file with curl on Oracle Linux 8 and got an error:
+<code>routines:ssl_choose_client_version:unsupported protocol</code>. It&rsquo;s an old host and I have no access to
+upgrade the software. So I had to relax my encryption settings with
+<code>update-crypto-policies --set LEGACY</code>. It&rsquo;s not the best way to solve this issue, but if you need to
+download a file and you don&rsquo;t have any other options, it is worth doing.</p>
+
+  <div class="post-date">
+    <a href="https://notes.0e39bf7b.blog/posts/1657969466/"><time datetime="2022-07-16T11:04:26Z">Jul 16, 2022 11:04</time></a>
+  </div>
+</article><article class="post">
   <p>The easiest way to find Ubuntu installation date is checking the installer&rsquo;s directory:
 <code>ls -lt /var/log/installer</code>.</p>
 

@@ -6,7 +6,16 @@
     <description>Recent content on Developer&#39;s notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Jul 2022 11:50:40 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jul 2022 11:04:26 +0000</lastBuildDate><atom:link href="https://notes.0e39bf7b.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1657969466</title>
+      <link>https://notes.0e39bf7b.blog/posts/1657969466/</link>
+      <pubDate>Sat, 16 Jul 2022 11:04:26 +0000</pubDate>
+      
+      <guid>https://notes.0e39bf7b.blog/posts/1657969466/</guid>
+      <description>I tried to download a file with curl on Oracle Linux 8 and got an error: routines:ssl_choose_client_version:unsupported protocol. It&amp;rsquo;s an old host and I have no access to upgrade the software. So I had to relax my encryption settings with update-crypto-policies --set LEGACY. It&amp;rsquo;s not the best way to solve this issue, but if you need to download a file and you don&amp;rsquo;t have any other options, it is worth doing.</description>
+    </item>
+    
     <item>
       <title>1657799440</title>
       <link>https://notes.0e39bf7b.blog/posts/1657799440/</link>
